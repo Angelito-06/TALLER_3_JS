@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de estudiantes</title>
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <script src="../js/utilidades.js"></script>
+    <script src="../js/gestionestudiantes.js"></script>
+    <script src="../js/estudiantes.js"></script>
+</head>
+
+<body>
+
+    <div class="divPadre">
+        <div class="divIzquierdo">
+            <a href="../index.html"><button class="buttonNavegacion">Pagina Principal</button></a>
+            <a href="gestionmatriculas.html"><button class="buttonNavegacion">Gestión de Matriculas</button></a>
+            <a href="gestionprogramasacademicos.html"><button class="buttonNavegacion">Gestion de Programas
+                    Academicos</button></a>
+            <img src="../recursos/imagenes/imagenLogo.png" alt="imagenLogo" style="margin-top: 90px;">
+        </div>
+        <div class="divDerecho">
+            <div class="divContenedor">
+                <h1>Gestión de Estudiantes</h1>
+                <form action="">
+                    <label for="identificacion">Identificación</label>
+                    <input type="text" id="identificacion" required>
+
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required pattern="^[A-Za-z]+$">
+
+                    <label for="fecha">Fecha Nacimiento</label>
+                    <input type="date" id="fecha" required>
+
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id="correo" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" pattern="^\d{8,15}$">
+                </form>
+                <button onclick="guardarEstudiante()">Guardar</button>
+                <button onclick="actualizar()">Actualizar</button>
+                <button onclick="eliminar()">Eliminar</button>
+                <button onclick="consultar()">Consultar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

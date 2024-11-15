@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Programas Academicos</title>
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <script src="../js/utilidades.js"></script>
+    <script src="../js/gestionprogramas.js"></script>
+    <script src="../js/programas.js"></script>
+</head>
+
+<body>
+
+    <div class="divPadre">
+        <div class="divIzquierdo">
+            <a href="gestionmatriculas.html"><button class="buttonNavegacion">Gestión de Matriculas</button></a>
+            <a href="gestionestudiante.html"><button class="buttonNavegacion">Gestion de Estudiantes</button></a>
+            <a href="../index.html"><button class="buttonNavegacion">Pagina Principal</button></a>
+            <img src="../recursos/imagenes/imagenLogo.png" alt="imagenLogo" style="margin-top: 90px;">
+        </div>
+        <div class="divDerecho">
+            <div class="divContenedor">
+                <h1>Gestión de Programas Academicos</h1>
+                <form action="">
+                    <label for="codigoPrograma">Código del Programa</label>
+                    <input type="text" id="codigoPrograma" required>
+
+                    <label for="nombrePrograma">Nombre del Programa</label>
+                    <input type="text" id="nombrePrograma" required>
+
+                    <label for="duracion">Duración (En semestre)</label>
+                    <input type="number" id="duracion" required  min="5" max="10">
+
+                    <label for="modalidad">Modalidad</label>
+                    <select name="modalidad" id="modalidad">
+                        <option value = "presencial">Presencial</option>
+                        <option value = "virtual">Virtual</option>
+                        <option value = "semipresencial">SemiPresencial</option>
+                    </select>
+
+                    <label for="fecha">Fecha de Inicio</label>
+                    <input type="date" id="fecha">
+                </form>
+                <button onclick="guardarPrograma()">Guardar</button>
+                <button onclick="actualizarPrograma()">Actualizar</button>
+                <button onclick="eliminarPrograma()">Eliminar</button>
+                <button onclick="consultarPrograma()">Consultar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

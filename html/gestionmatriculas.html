@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Matriculas</title>
+    <link rel="stylesheet" href="../css/estilos2.css">
+</head>
+<body>
+
+    <div class="divPadre">
+        <div class="divIzquierdo">
+            <a href="gestionestudiante.html"><button class="buttonNavegacion">Gestión de Estudiantes</button></a>
+            <a href="gestionprogramasacademicos.html"><button class="buttonNavegacion">Gestión de Programas Academicos</button></a>
+            <a href="../index.html"><button class="buttonNavegacion">Pagina Principal</button></a>
+            <img src="../recursos/imagenes/imagenLogo.png" alt="imagenLogo" style="margin-top: 90px;">
+        </div>
+        <div class="divDerecho">
+            <div class="divContenedor">
+                <h1>Gestión de Matriculas</h1>
+                <form action="">
+                    <label for="identificacionMatricula">Identificación de Matricula</label>
+                    <input type="text" id="identificacionMatricula">
+
+                    <label for="identificacion">Identicicación de Estudiante</label>
+                    <input type="text" id="identificacion">
+
+                    <label for="codigo">Código de Matricula</label>
+                    <input type="text" id="codigo">
+
+                    <label for="fechaMatricula">Fecha de Matricula</label>
+                    <input type="email" id="fechaMatricula">
+
+                    <label for="estado">Estado Matricula</label>
+                    <input type="text" id="estado">
+                </form>
+                <button onclick="guardarEstudiante()">Guardar</button>
+                <button onclick="actualizar()">Actualizar</button>
+                <button onclick="eliminar()">Eliminar</button>
+                <button onclick="consultar()">Consultar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
